@@ -32,7 +32,11 @@ Public Class LoginForm
     Sub ServerConfig()
         ' carregando as configs
         MySQLServername = cmbServerName.Text.ToString.Trim
-        MySQLConnectionString = "server=" & MySQLServername & ";userid=root;password=Guiga2002;database=3erp"
+        'MySQLConnectionString = "server=" & MySQLServername & ";userid=root;password=Guiga2002;database=3erp"
+        MySQLConnectionString = "server=" & MySQLServername & ";userid=root; password=Guiga2002; SslMode = none"
+
+        'Dim connstring = String.Format("Server=" & MySQLServername & "; database={0}; UID=root; password=Guiga2002; SslMode = none", databaseName)
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -36,5 +36,8 @@ Public Class NOVO_REGISTRO_Produto
         ' recarregando a tabela de produtos
         MainForm.FormGestaoCadastro.RecarregarTabelaComFiltro()
 
+        ' recarregando os itens da entrada de itens
+        EntradaNotaArmazem.CarregaTabela()
+
     End Sub
 End Class

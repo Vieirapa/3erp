@@ -2,8 +2,6 @@
 
 
 Public Class GestaoCadastros
-    ' para saber de onde venho e para onde vou 
-    Dim Pai As Object
 
     ' nome da tabela para onde aponta
     Public strTabelaFoco As String = "produtos"
@@ -36,7 +34,7 @@ Public Class GestaoCadastros
 
     End Sub
 
-    Private Sub CarregaTabela()
+    Public Sub CarregaTabela()
 
         MySQLConn = New MySqlConnection
         MySQLConn.ConnectionString = LoginForm.MySQLConnectionString
@@ -266,9 +264,7 @@ Public Class GestaoCadastros
 
     End Sub
 
-    Private Sub PRODUTO_DataGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PRODUTO_DataGrid.CellContentClick
 
-    End Sub
 
     Private Sub PRODUTO_DataGrid_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles PRODUTO_DataGrid.CellClick
 
